@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,500,600,700);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+$blue: #0083FF;
+$yellow: #FFFF00;
+$red: #FF0000;
+$green: #00EF04;
+$purple: #AA00FF;
+$black: #000;
+$grey: #444;
+$lt-grey: #E8E8E8;
+$white: #fff;
+$off-white: #eee;
+$orange: #FFAA00;
+$lt-blue: #00FFFF;
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+     -moz-transition: $value;
+          transition: $value;
+}
+@mixin transform($value) {
+  -webkit-transform: $value;
+     -moz-transform: $value;
+          transform: $value;
+}
+@mixin transform-translate($value, $degree) {
+  -webkit-transform-translate: $value, $degree;
+     -moz-transform-translate: $value, $degree;
+          transform-translate: $value, $degree;
+}
+@mixin filter($value) {
+  -webkit-filter: $value;
+     -moz-filter: $value;
+          filter: $value;
+}
+@mixin transform-style($value) {
+  -webkit-transform-style: $value;
+     -moz-transform-style: $value;
+          transform-style: $value;
+}
+@mixin linear-gradient($direction, $top, $bottom) {
+  background: -webkit-linear-gradient($direction, $top, $bottom);
+     background: -moz-linear-gradient($direction, $top, $bottom);
+          background: linear-gradient($direction, $top, $bottom);
+}
+@mixin linear-gradient-2($direction, $top, $middle, $bottom) {
+  background: -webkit-linear-gradient($direction, $top, $middle, $bottom);
+  background:    -moz-linear-gradient($direction, $top, $middle, $bottom);
+  background:         linear-gradient($direction, $top, $middle, $bottom);
+}
+@mixin animation($value) {
+  -webkit-animation: $value;
+     -moz-animation: $value;
+          animation: $value;
+}
+@mixin animation-delay($value) {
+  -webkit-animation-delay: $value;
+     -moz-animation-delay: $value;
+          animation-delay: $value;
+}
+@mixin animation-direction($value) {
+  -webkit-animation-direction: $value;
+     -moz-animation-direction: $value;
+          animation-direction: $value;
+}
+@mixin animation-play-state($value) {
+  -webkit-animation-play-state: $value;
+     -moz-animation-play-state: $value;
+          animation-play-state: $value;
+}
