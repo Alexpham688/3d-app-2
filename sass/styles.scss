@@ -95,7 +95,7 @@ header {
   height: 100%;
   position: absolute;
   @include transform-style(preserve-3d);
-  // @include animation( rotation 40s infinite linear);
+  // @include animation( rotation 25s infinite linear);
   @include transition(all .5s ease-in-out);
   @include animation-direction(normal);
 

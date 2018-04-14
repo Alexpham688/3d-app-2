@@ -2,14 +2,14 @@ $(function() {
   var carousel = $('.carousel');
   currentDeg = 0;
 
-  $('.left').on('click', {d: 'n'}, rotate);
-  $('.right').on('click', {d: 'p'}, rotate);
+  $('.left').on('click', {d: 'l'}, rotate);
+  $('.right').on('click', {d: 'r'}, rotate);
 
   function rotate(e) {
-    if(e.data.d === 'n') {
+    if(e.data.d === 'l') {
       currentDeg = currentDeg - 40;
     }
-    if(e.data.d === 'p') {
+    if(e.data.d === 'r') {
       currentDeg = currentDeg + 40;
     }
     carousel.css({
@@ -19,11 +19,11 @@ $(function() {
     });
   }
 
-  TweenMax.from('.a', 4, {
-    y: -500,
-    opacity: 0,
-    ease: SteppedEase.easeInOut
-  });
+  // TweenMax.from('.a', 4, {
+  //   y: -500,
+  //   opacity: 0,
+  //   ease: SteppedEase.easeInOut
+  // });
   TweenMax.from('.d',4, {
     y: -250,
     opacity: .5,
@@ -55,19 +55,20 @@ $(function() {
     ease: SteppedEase.easeInOut
   });
   TweenMax.from('.i', 6, {
-    y: 400,
+    x: 400,
     opacity: 0,
-    ease: Bounce.easeOut
+    ease: Power1.easeOut
   });
   TweenMax.from('.h', 4, {
-      y: -300,
+      y: 600,
       opacity: 0,
-      ease: RoughEase.easeOut
+      ease: SteppedEase.easeOut
   });
-  TweenMax.from('.j', 6, {
-    x: 600,
+  TweenMax.from('.a', 2, {
+    y: 600,
+    delay: 6,
     opacity: 0,
-    ease: SteppedEase.easeOut
+    ease: Bounce.easeOut
   });
 
 });
