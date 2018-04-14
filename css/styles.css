@@ -60,7 +60,7 @@ header {
     cursor: pointer;
     background-image: linear-gradient(45deg, #E8E8E8 50%, transparent 50%);
     background-position: 100%;
-    background-size: 400%;
+    background-size: 300%;
     -webkit-transition: background 500ms ease-in-out;
     -moz-transition: background 500ms ease-in-out;
     transition: background 500ms ease-in-out; }
@@ -94,7 +94,10 @@ header {
   transform-style: preserve-3d;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal; }
   .carousel:hover {
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -301,12 +304,12 @@ header {
   .button-container {
     position: absolute;
     font-size: 40px;
-    top: 40%;
+    top: 50%;
     left: 15%;
     width: 300px; }
   .carousel {
     width: 90%;
-    height: 100%; }
+    height: 60%; }
     .carousel figure {
       width: 165px;
       height: 100px; }
