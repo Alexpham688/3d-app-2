@@ -19,13 +19,9 @@ $(function() {
     });
   }
 
-  // TweenMax.from('.a', 4, {
-  //   y: -500,
-  //   opacity: 0,
-  //   ease: SteppedEase.easeInOut
-  // });
   TweenMax.from('.d',4, {
-    y: -250,
+    y: -550,
+    delay: 3,
     opacity: .5,
     ease: Back.easeInOut
   });
@@ -37,6 +33,7 @@ $(function() {
   TweenMax.from('.c', 5, {
     y: 100,
     opacity: 0,
+    delay: 2,
     ease: Expo.easeOut
   });
   TweenMax.from('.e', 4, {
